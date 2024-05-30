@@ -6,6 +6,8 @@ let natSecSmb = document.querySelector(".national-sec.smb");
 let natSecAgro = document.querySelector(".national-sec.agro");
 let natSecL = document.querySelector(".national-sec.lettre");
 let natSecSH = document.querySelector(".national-sec.sh");
+let natSecSE = document.querySelector(".national-sec.se");
+let natSecSGC = document.querySelector(".national-sec.sgc");
 
 // bac calculator
 function Bac(){
@@ -275,6 +277,8 @@ SelectForm.addEventListener("submit" , (e)=>{
         natSecAgro.style.display = "none";
         natSecL.style.display = "none";
         natSecSH.style.display = "none";
+        natSecSE.style.display = "none";
+        natSecSGC.style.display = "none";
     }
     else if(optionValue == 2){
         bac.style.display = "none";
@@ -285,6 +289,8 @@ SelectForm.addEventListener("submit" , (e)=>{
         natSecAgro.style.display = "none";
         natSecL.style.display = "none";
         natSecSH.style.display = "none";
+        natSecSE.style.display = "none";
+        natSecSGC.style.display = "none";
     }
     else if(optionValue == 3){
         bac.style.display = "none";
@@ -295,6 +301,8 @@ SelectForm.addEventListener("submit" , (e)=>{
         natSecAgro.style.display = "none";
         natSecL.style.display = "none";
         natSecSH.style.display = "none";
+        natSecSE.style.display = "none";
+        natSecSGC.style.display = "none";
     }
     else if(optionValue == 4){
         bac.style.display = "none";
@@ -305,6 +313,8 @@ SelectForm.addEventListener("submit" , (e)=>{
         natSecAgro.style.display = "none";
         natSecL.style.display = "none";
         natSecSH.style.display = "none";
+        natSecSE.style.display = "none";
+        natSecSGC.style.display = "none";
     }
     else if(optionValue == 5){
         bac.style.display = "none";
@@ -315,6 +325,8 @@ SelectForm.addEventListener("submit" , (e)=>{
         natSecAgro.style.display = "none";
         natSecL.style.display = "none";
         natSecSH.style.display = "none";
+        natSecSE.style.display = "none";
+        natSecSGC.style.display = "none";
     }
     else if(optionValue == 6){
         bac.style.display = "none";
@@ -325,6 +337,8 @@ SelectForm.addEventListener("submit" , (e)=>{
         natSecAgro.style.display = "block";
         natSecL.style.display = "none";
         natSecSH.style.display = "none";
+        natSecSE.style.display = "none";
+        natSecSGC.style.display = "none";
     }
     else if(optionValue == 7){
         bac.style.display = "none";
@@ -335,6 +349,8 @@ SelectForm.addEventListener("submit" , (e)=>{
         natSecAgro.style.display = "none";
         natSecL.style.display = "block";
         natSecSH.style.display = "none";
+        natSecSE.style.display = "none";
+        natSecSGC.style.display = "none";
     }
     else if(optionValue == 8){
         bac.style.display = "none";
@@ -345,6 +361,32 @@ SelectForm.addEventListener("submit" , (e)=>{
         natSecAgro.style.display = "none";
         natSecL.style.display = "none";
         natSecSH.style.display = "block";
+        natSecSE.style.display = "none";
+        natSecSGC.style.display = "none";
+    }
+    else if(optionValue == 9){
+        bac.style.display = "none";
+        natSecPc.style.display = "none"; 
+        natSecSvt.style.display = "none"; 
+        natSecSma.style.display = "none";
+        natSecSmb.style.display = "none";
+        natSecAgro.style.display = "none";
+        natSecL.style.display = "none";
+        natSecSH.style.display = "none";
+        natSecSE.style.display = "block";
+        natSecSGC.style.display = "none";
+    }
+    else if(optionValue == 10){
+        bac.style.display = "none";
+        natSecPc.style.display = "none"; 
+        natSecSvt.style.display = "none"; 
+        natSecSma.style.display = "none";
+        natSecSmb.style.display = "none";
+        natSecAgro.style.display = "none";
+        natSecL.style.display = "none";
+        natSecSH.style.display = "none";
+        natSecSE.style.display = "none";
+        natSecSGC.style.display = "block";
     }
     console.log(optionValue)
 })

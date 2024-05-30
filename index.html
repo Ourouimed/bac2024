@@ -25,6 +25,8 @@
                 <option value="6">حساب معدل الامتحان الوطني (S.Agro) </option>
                 <option value="7">حساب معدل الامتحان الوطني (أداب) </option>
                 <option value="8">حساب معدل الامتحان الوطني (علوم انسانية) </option>
+                <option value="9">حساب معدل الامتحان الوطني (علوم اقتصادية) </option>
+                <option value="10">حساب معدل الامتحان الوطني (علوم التدبير المحاسباتي) </option>                
             </select>
             <button id="submit" type="submit">تأكيد</button>
         </form>
@@ -139,6 +141,38 @@
             <h3>حساب معدل الوطني (علوم انسانية)</h3>
             <input type="number" id="ar" placeholder="اللغة العربية"/>
             <input type="number" id="hg" placeholder="التاريخ و الجغرافيا"/>
+            <input type="number" id="ph" placeholder="الفلسفة"/>
+            <input type="number" id="eng" placeholder="الانجليزية"/>
+            <button id="calc">احسب</button>
+            <div class="result-sec">
+                النتيجة 
+                <span id="result">
+                    <span id="note"></span>/20
+                </span>
+            </div>
+        </div>
+        <div class="national-sec se" style="display: none;">
+            <h3>حساب معدل الوطني (se)</h3>
+            <input type="number" id="math" placeholder="الرياضيات "/>
+            <input type="number" id="cmf" placeholder="المحاسبة و الرياضيات المالية"/>
+            <input type="number" id="svt" placeholder="الاقتصاد العام و الأحصاء"/>
+            <input type="number" id="svt" placeholder="الاقتصاد و التنضيم الاداري للمقاولات"/>
+            <input type="number" id="ph" placeholder="الفلسفة"/>
+            <input type="number" id="eng" placeholder="الانجليزية"/>
+            <button id="calc">احسب</button>
+            <div class="result-sec">
+                النتيجة 
+                <span id="result">
+                    <span id="note"></span>/20
+                </span>
+            </div>
+        </div>
+        <div class="national-sec sgc" style="display: none;">
+            <h3>حساب معدل الوطني (se)</h3>
+            <input type="number" id="math" placeholder="الرياضيات "/>
+            <input type="number" id="cmf" placeholder="المحاسبة و الرياضيات المالية"/>
+            <input type="number" id="svt" placeholder="الاقتصاد العام و الأحصاء"/>
+            <input type="number" id="svt" placeholder="الاقتصاد و التنضيم الاداري للمقاولات"/>
             <input type="number" id="ph" placeholder="الفلسفة"/>
             <input type="number" id="eng" placeholder="الانجليزية"/>
             <button id="calc">احسب</button>
