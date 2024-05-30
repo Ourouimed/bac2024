@@ -26,7 +26,9 @@
                 <option value="7">حساب معدل الامتحان الوطني (أداب) </option>
                 <option value="8">حساب معدل الامتحان الوطني (علوم انسانية) </option>
                 <option value="9">حساب معدل الامتحان الوطني (علوم اقتصادية) </option>
-                <option value="10">حساب معدل الامتحان الوطني (علوم التدبير المحاسباتي) </option>                
+                <option value="10">حساب معدل الامتحان الوطني (علوم التدبير المحاسباتي) </option>   
+                <option value="11">حساب معدل الامتحان الوطني (العلوم و التكنولوجيات الكهربائية) </option>   
+                <option value="12">حساب معدل الامتحان الوطني ( العلوم والتكنولوجيات الميكانيكية) </option>                
             </select>
             <button id="submit" type="submit">تأكيد</button>
         </form>
@@ -173,6 +175,36 @@
             <input type="number" id="cmf" placeholder="المحاسبة و الرياضيات المالية"/>
             <input type="number" id="egs" placeholder="الاقتصاد العام و الأحصاء"/>
             <input type="number" id="eoae" placeholder="الاقتصاد و التنضيم الاداري للمقاولات"/>
+            <input type="number" id="ph" placeholder="الفلسفة"/>
+            <input type="number" id="eng" placeholder="الانجليزية"/>
+            <button id="calc">احسب</button>
+            <div class="result-sec">
+                النتيجة 
+                <span id="result">
+                    <span id="note"></span>/20
+                </span>
+            </div>
+        </div>
+        <div class="national-sec ste" style="display: none;">
+            <h3>حساب معدل الوطني (ste)</h3>
+            <input type="number" id="math" placeholder="الرياضيات "/>
+            <input type="number" id="pc" placeholder="الفيزياء و الكيمياء "/>
+            <input type="number" id="si" placeholder="علوم المنهدس "/>
+            <input type="number" id="ph" placeholder="الفلسفة"/>
+            <input type="number" id="eng" placeholder="الانجليزية"/>
+            <button id="calc">احسب</button>
+            <div class="result-sec">
+                النتيجة 
+                <span id="result">
+                    <span id="note"></span>/20
+                </span>
+            </div>
+        </div>
+        <div class="national-sec stm" style="display: none;">
+            <h3>حساب معدل الوطني (ste)</h3>
+            <input type="number" id="math" placeholder="الرياضيات "/>
+            <input type="number" id="pc" placeholder="الفيزياء و الكيمياء "/>
+            <input type="number" id="si" placeholder="علوم المنهدس "/>
             <input type="number" id="ph" placeholder="الفلسفة"/>
             <input type="number" id="eng" placeholder="الانجليزية"/>
             <button id="calc">احسب</button>
