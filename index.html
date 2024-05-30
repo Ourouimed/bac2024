@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>احسب نقاطك</title>
+</head>
+<body>
+    <h1>Bac Calculator </h1>
+    <div class="container">
+        <h3>اضغط على القائمة للاختيار</h3>
+        <form name="selectForm" action="">
+            <select name="list" id="select">
+                <option value="0" >------- قم بالاختيار-------</option>
+                <option value="1" >حساب معدل الباكالوريا</option>
+                <option value="2">حساب معدل الامتحان الوطني (PC) </option>
+                <option value="3">حساب معدل الامتحان الوطني (SVT) </option>
+                <option value="4">حساب معدل الامتحان الوطني (SMA) </option>
+                <option value="5">حساب معدل الامتحان الوطني (SMB) </option>
+                <option value="6">حساب معدل الامتحان الوطني (S.Agro) </option>
+                <option value="7">حساب معدل الامتحان الوطني (أداب) </option>
+                <option value="8">حساب معدل الامتحان الوطني (علوم انسانية) </option>
+            </select>
+            <button id="submit" type="submit">تأكيد</button>
+        </form>
+        <div class="bac-sec" style="display: none;">
+            <h3>حساب معدل الباكالوريا</h3>
+            <div class="input-double">
+                <input type="number" id="s1" placeholder="معدل الدورة الاولى"/>
+                <input type="number" id="s2" placeholder="معدل الدورة الثانية"/>
+            </div>
+            <input type="number" id="regional" placeholder="الامتحان الجهوي"/>
+            <input type="number" id="national" placeholder="الامتحان الوطني"/>
+            <button id="calc">احسب</button>
+            <div class="result-sec">
+                النتيجة 
+                <span id="result">
+                    <span id="note"></span>/20
+                </span>
+            </div>
+            <span id="mention">  </span>
+        </div>
+        <div style="display: none;" class="national-sec pc">
+            <h3>حساب معدل الوطني (PC)</h3>
+            <input type="number" id="math" placeholder="الرياضيات (math)"/>
+            <input type="number" id="pc" placeholder="الفيزياء (pc)"/>
+            <input type="number" id="svt" placeholder="علوم الحياة و الارض (svt) "/>
+            <input type="number" id="ph" placeholder="الفلسفة"/>
+            <input type="number" id="eng" placeholder="الانجليزية"/>
+            <button id="calc">احسب</button>
+            <div class="result-sec">
+                النتيجة 
+                <span id="result">
+                    <span id="note"></span>/20
+                </span>
+            </div>
+        </div>
+        <div class="national-sec svt" style="display: none;">
+            <h3>حساب معدل الوطني (svt)</h3>
+            <input type="number" id="math" placeholder="الرياضيات (math)"/>
+            <input type="number" id="pc" placeholder="الفيزياء (pc)"/>
+            <input type="number" id="svt" placeholder="علوم الحياة و الارض (svt) "/>
+            <input type="number" id="ph" placeholder="الفلسفة"/>
+            <input type="number" id="eng" placeholder="الانجليزية"/>
+            <button id="calc">احسب</button>
+            <div class="result-sec">
+                النتيجة 
+                <span id="result">
+                    <span id="note"></span>/20
+                </span>
+            </div>
+        </div>
+        <div class="national-sec sma" style="display: none;">
+            <h3>حساب معدل الوطني (sma)</h3>
+            <input type="number" id="math" placeholder="الرياضيات (math)"/>
+            <input type="number" id="pc" placeholder="الفيزياء (pc)"/>
+            <input type="number" id="svt" placeholder="علوم الحياة و الارض (svt) "/>
+            <input type="number" id="ph" placeholder="الفلسفة"/>
+            <input type="number" id="eng" placeholder="الانجليزية"/>
+            <button id="calc">احسب</button>
+            <div class="result-sec">
+                النتيجة 
+                <span id="result">
+                    <span id="note"></span>/20
+                </span>
+            </div>
+        </div>
+        <div class="national-sec smb" style="display: none;">
+            <h3>حساب معدل الوطني (smb)</h3>
+            <input type="number" id="math" placeholder="الرياضيات (math)"/>
+            <input type="number" id="pc" placeholder="الفيزياء (pc)"/>
+            <input type="number" id="si" placeholder=" علوم المنهدس(si) "/>
+            <input type="number" id="ph" placeholder="الفلسفة"/>
+            <input type="number" id="eng" placeholder="الانجليزية"/>
+            <button id="calc">احسب</button>
+            <div class="result-sec">
+                النتيجة 
+                <span id="result">
+                    <span id="note"></span>/20
+                </span>
+            </div>
+        </div>
+        <div class="national-sec agro" style="display: none;">
+            <h3>حساب معدل الوطني (s.agro)</h3>
+            <input type="number" id="math" placeholder="الرياضيات (math)"/>
+            <input type="number" id="pc" placeholder="الفيزياء (pc)"/>
+            <input type="number" id="svt" placeholder=" علوم الحياة و الأرض(svt) "/>
+            <input type="number" id="sva" placeholder=" العلوم النباتية والحيوانية  (sva) "/>
+            <input type="number" id="ph" placeholder="الفلسفة"/>
+            <input type="number" id="eng" placeholder="الانجليزية"/>
+            <button id="calc">احسب</button>
+            <div class="result-sec">
+                النتيجة 
+                <span id="result">
+                    <span id="note"></span>/20
+                </span>
+            </div>
+        </div>
+        <div class="national-sec lettre" style="display: none;">
+            <h3>حساب معدل الوطني (أداب)</h3>
+            <input type="number" id="ar" placeholder="اللغة العربية"/>
+            <input type="number" id="hg" placeholder="التاريخ و الجغرافيا"/>
+            <input type="number" id="ph" placeholder="الفلسفة"/>
+            <input type="number" id="eng" placeholder="الانجليزية"/>
+            <button id="calc">احسب</button>
+            <div class="result-sec">
+                النتيجة 
+                <span id="result">
+                    <span id="note"></span>/20
+                </span>
+            </div>
+        </div>
+        <div class="national-sec sh" style="display: none;">
+            <h3>حساب معدل الوطني (علوم انسانية)</h3>
+            <input type="number" id="ar" placeholder="اللغة العربية"/>
+            <input type="number" id="hg" placeholder="التاريخ و الجغرافيا"/>
+            <input type="number" id="ph" placeholder="الفلسفة"/>
+            <input type="number" id="eng" placeholder="الانجليزية"/>
+            <button id="calc">احسب</button>
+            <div class="result-sec">
+                النتيجة 
+                <span id="result">
+                    <span id="note"></span>/20
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="copyrights">
+        made by <a href="https://www.instagram.com/ourouimed/" target="_blank">Medamine Ouroui</a>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
