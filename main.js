@@ -258,6 +258,63 @@ nat_calc.addEventListener("click" , ()=>{
 }
 NatSH();
 
+// national SE calculator
+function NatSE(){
+    let math = natSecSE.querySelector("#math"),
+    cmf = natSecSE.querySelector("#cmf"),
+    egs = natSecSE.querySelector("#egs"),
+    eoae = natSecSE.querySelector("#cmf"),
+    ph = natSecSE.querySelector("#cmf"),
+    eng = natSecSE.querySelector("#cmf"),
+    nat_calc = natSecSE.querySelector("#calc"),
+    nat_note = natSecSE.querySelector("#note")
+
+
+nat_calc.addEventListener("click" , ()=>{
+    if(math.value != "" && ph.value != ""  && eng.value != ""  && cmf.value != "" && egs.value != "" && eoae.value != ""){
+        if(math.value >= 0 && math.value <= 20  && eng.value >= 0 && eng.value <= 20 && ph.value >= 0 && ph.value <= 20 && cmf.value >= 0 && cmf.value <= 20 && egs.value >= 0 && egs.value <= 20 && eoae.value >= 0 && eoae.value <= 20){
+            let result =  ((+math.value *4) + (+cmf.value *4) + (+egs.value *6)+ (+eoae.value *3)+ (+ph.value *2) + (+eng.value *2))/21
+            nat_note.innerHTML = result.toFixed(2);
+        }
+        else {
+            alert("نقطة غير ممكنة")
+        }
+    }
+    else {
+        alert("اكمل ادخال النقط")
+    }
+})
+}
+NatSE();
+
+// national SE calculator
+function NatSGC(){
+    let math = natSecSGC.querySelector("#math"),
+    cmf = natSecSGC.querySelector("#cmf"),
+    egs = natSecSGC.querySelector("#egs"),
+    eoae = natSecSGC.querySelector("#cmf"),
+    ph = natSecSGC.querySelector("#cmf"),
+    eng = natSecSGC.querySelector("#cmf"),
+    nat_calc = natSecSGC.querySelector("#calc"),
+    nat_note = natSecSGC.querySelector("#note")
+
+
+nat_calc.addEventListener("click" , ()=>{
+    if(math.value != "" && ph.value != ""  && eng.value != ""  && cmf.value != "" && egs.value != "" && eoae.value != ""){
+        if(math.value >= 0 && math.value <= 20  && eng.value >= 0 && eng.value <= 20 && ph.value >= 0 && ph.value <= 20 && cmf.value >= 0 && cmf.value <= 20 && egs.value >= 0 && egs.value <= 20 && eoae.value >= 0 && eoae.value <= 20){
+            let result =  ((+math.value *4) + (+cmf.value *4) + (+egs.value *6)+ (+eoae.value *3)+ (+ph.value *2) + (+eng.value *2))/21
+            nat_note.innerHTML = result.toFixed(2);
+        }
+        else {
+            alert("نقطة غير ممكنة")
+        }
+    }
+    else {
+        alert("اكمل ادخال النقط")
+    }
+})
+}
+NatSGC();
 
 
 // Select form 
