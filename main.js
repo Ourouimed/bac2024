@@ -302,7 +302,7 @@ function NatSGC(){
 nat_calc.addEventListener("click" , ()=>{
     if(math.value != "" && ph.value != ""  && eng.value != ""  && cmf.value != "" && egs.value != "" && eoae.value != ""){
         if(math.value >= 0 && math.value <= 20  && eng.value >= 0 && eng.value <= 20 && ph.value >= 0 && ph.value <= 20 && cmf.value >= 0 && cmf.value <= 20 && egs.value >= 0 && egs.value <= 20 && eoae.value >= 0 && eoae.value <= 20){
-            let result =  ((+math.value *4) + (+cmf.value *4) + (+egs.value *6)+ (+eoae.value *3)+ (+ph.value *2) + (+eng.value *2))/21
+            let result =  ((+math.value *4) + (+cmf.value *6) + (+egs.value *3)+ (+eoae.value *6)+ (+ph.value *2) + (+eng.value *2))/23
             nat_note.innerHTML = result.toFixed(2);
         }
         else {
