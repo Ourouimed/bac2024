@@ -289,7 +289,7 @@ nat_calc.addEventListener("click" , ()=>{
 }
 NatSE();
 
-// national SE calculator
+// national SGC calculator
 function NatSGC(){
     let math = natSecSGC.querySelector("#math"),
     cmf = natSecSGC.querySelector("#cmf"),
@@ -317,6 +317,62 @@ nat_calc.addEventListener("click" , ()=>{
 })
 }
 NatSGC();
+
+// national STE calculator
+function NatSTE(){
+    let math = natSecSTE.querySelector("#math"),
+    pc = natSecSTE.querySelector("#cmf"),
+    si = natSecSTE.querySelector("#egs"),
+    ph = natSecSTE.querySelector("#cmf"),
+    eng = natSecSTE.querySelector("#cmf"),
+    nat_calc = natSecSTE.querySelector("#calc"),
+    nat_note = natSecSTE.querySelector("#note")
+
+
+nat_calc.addEventListener("click" , ()=>{
+    if(math.value != "" && ph.value != ""  && eng.value != ""  && si.value != "" && pc.value != ""){
+        if(math.value >= 0 && math.value <= 20  && eng.value >= 0 && eng.value <= 20 && ph.value >= 0 && ph.value <= 20 && pc.value >= 0 && pc.value <= 20 && si.value >= 0 && si.value <= 20){
+            let result =  ((+math.value *7) + (+pc.value *5) + (+si.value *8)+ (+eng.value *2)+ (+ph.value *2))/24
+            nat_note.innerHTML = result.toFixed(2);
+        }
+        else {
+            alert("نقطة غير ممكنة")
+        }
+    }
+    else {
+        alert("اكمل ادخال النقط")
+    }
+})
+}
+NatSTE();
+
+// national STE calculator
+function NatSTM(){
+    let math = natSecSTM.querySelector("#math"),
+    pc = natSecSTM.querySelector("#cmf"),
+    si = natSecSTM.querySelector("#egs"),
+    ph = natSecSTM.querySelector("#cmf"),
+    eng = natSecSTM.querySelector("#cmf"),
+    nat_calc = natSecSTM.querySelector("#calc"),
+    nat_note = natSecSTM.querySelector("#note")
+
+
+nat_calc.addEventListener("click" , ()=>{
+    if(math.value != "" && ph.value != ""  && eng.value != ""  && si.value != "" && pc.value != ""){
+        if(math.value >= 0 && math.value <= 20  && eng.value >= 0 && eng.value <= 20 && ph.value >= 0 && ph.value <= 20 && pc.value >= 0 && pc.value <= 20 && si.value >= 0 && si.value <= 20){
+            let result =  ((+math.value *7) + (+pc.value *5) + (+si.value *8)+ (+eng.value *2)+ (+ph.value *2))/24
+            nat_note.innerHTML = result.toFixed(2);
+        }
+        else {
+            alert("نقطة غير ممكنة")
+        }
+    }
+    else {
+        alert("اكمل ادخال النقط")
+    }
+})
+}
+NatSTM();
 
 
 // Select form 
@@ -453,7 +509,7 @@ SelectForm.addEventListener("submit" , (e)=>{
         natSecSTE.style.display = "none";
         natSecSTM.style.display = "none";
     }
-    else if(optionValue == 11){
+    else if(optionValue == 10){
         bac.style.display = "none";
         natSecPc.style.display = "none"; 
         natSecSvt.style.display = "none"; 
@@ -467,7 +523,7 @@ SelectForm.addEventListener("submit" , (e)=>{
         natSecSTE.style.display = "none";
         natSecSTM.style.display = "none";
     }
-    else if(optionValue == 10){
+    else if(optionValue == 11){
         bac.style.display = "none";
         natSecPc.style.display = "none"; 
         natSecSvt.style.display = "none"; 
