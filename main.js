@@ -273,6 +273,8 @@ SelectForm.addEventListener("submit" , (e)=>{
         natSecSma.style.display = "none";
         natSecSmb.style.display = "none";
         natSecAgro.style.display = "none";
+        natSecL.style.display = "none";
+        natSecSH.style.display = "none";
     }
     else if(optionValue == 2){
         bac.style.display = "none";
@@ -281,6 +283,8 @@ SelectForm.addEventListener("submit" , (e)=>{
         natSecSma.style.display = "none";
         natSecSmb.style.display = "none";
         natSecAgro.style.display = "none";
+        natSecL.style.display = "none";
+        natSecSH.style.display = "none";
     }
     else if(optionValue == 3){
         bac.style.display = "none";
@@ -289,6 +293,8 @@ SelectForm.addEventListener("submit" , (e)=>{
         natSecSma.style.display = "none";
         natSecSmb.style.display = "none";
         natSecAgro.style.display = "none";
+        natSecL.style.display = "none";
+        natSecSH.style.display = "none";
     }
     else if(optionValue == 4){
         bac.style.display = "none";
@@ -297,6 +303,8 @@ SelectForm.addEventListener("submit" , (e)=>{
         natSecSma.style.display = "block";
         natSecSmb.style.display = "none";
         natSecAgro.style.display = "none";
+        natSecL.style.display = "none";
+        natSecSH.style.display = "none";
     }
     else if(optionValue == 5){
         bac.style.display = "none";
@@ -305,6 +313,8 @@ SelectForm.addEventListener("submit" , (e)=>{
         natSecSma.style.display = "none";
         natSecSmb.style.display = "block";
         natSecAgro.style.display = "none";
+        natSecL.style.display = "none";
+        natSecSH.style.display = "none";
     }
     else if(optionValue == 6){
         bac.style.display = "none";
