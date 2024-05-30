@@ -453,7 +453,7 @@ SelectForm.addEventListener("submit" , (e)=>{
         natSecSTE.style.display = "none";
         natSecSTM.style.display = "none";
     }
-    else if(optionValue == 10){
+    else if(optionValue == 11){
         bac.style.display = "none";
         natSecPc.style.display = "none"; 
         natSecSvt.style.display = "none"; 
@@ -481,7 +481,7 @@ SelectForm.addEventListener("submit" , (e)=>{
         natSecSTE.style.display = "block";
         natSecSTM.style.display = "none";
     }
-    else if(optionValue == 10){
+    else if(optionValue == 12){
         bac.style.display = "none";
         natSecPc.style.display = "none"; 
         natSecSvt.style.display = "none"; 
